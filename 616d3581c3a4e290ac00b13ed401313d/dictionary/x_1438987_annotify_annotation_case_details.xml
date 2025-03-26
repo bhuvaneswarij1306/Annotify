@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="371e39c1c3a4e290ac00b13ed4013124" extends="task" label="Annotation Case Details" max_length="40" name="x_1438987_annotify_annotation_case_details" type="collection">
+        <element label="Annotator" max_length="32" name="annotator" reference="x_1438987_annotify_annotation_case_details" type="reference"/>
+        <element label="datasetId" max_length="255" name="datasetid" type="string"/>
+        <element label="Project Name" max_length="255" name="project_name" type="string"/>
+        <element label="Image Details" max_length="32" name="image_details" reference="x_1438987_annotify_annotated_image_details" type="reference"/>
+        <element label="imageId" max_length="255" name="imageid" type="string"/>
+    </element>
+</database>

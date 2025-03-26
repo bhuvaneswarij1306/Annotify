@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="image_name" label="Image Name" language="en" table="x_1438987_annotify_annotated_image_details">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>image_name</element>
+            <help/>
+            <hint/>
+            <label>Image Name</label>
+            <language>en</language>
+            <name>x_1438987_annotify_annotated_image_details</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-26 05:17:19</sys_created_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Image Name</sys_name>
+            <sys_package display_value="Annotify" source="x_1438987_annotify">616d3581c3a4e290ac00b13ed401313d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Annotify">616d3581c3a4e290ac00b13ed401313d</sys_scope>
+            <sys_update_name>sys_documentation_x_1438987_annotify_annotated_image_details_image_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-26 05:17:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
