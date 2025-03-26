@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>gs.hasRole('x_1438987_annotify.user')&amp;&amp;(current.assigned_to=='')&amp;&amp;(current.state==500||current.state==520||current.state!=510)</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>primary</form_style>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style>primary</list_style>
+        <messages/>
+        <name>Assign to me</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[var gr = new GlideRecord('sys_user_grmember');
+gr.addEncodedQuery('group=578d3981c3a4e290ac00b13ed4013186^ORgroup=efcd3181c3a4e290ac00b13ed40131fa^user.sys_id=' + gs.getUserID().toString());
+gr.query();
+if (gr.next()) {
+    current.assignment_group = gr.group;
+    current.assigned_to = gr.user;
+    if (current.state == 500) {
+        current.assignment_group = '578d3981c3a4e290ac00b13ed4013186';
+        current.assigned_to = gr.user;
+        current.state = 510;
+    } else if (current.state == 520) {
+        current.assignment_group = 'efcd3181c3a4e290ac00b13ed40131fa';
+        current.assigned_to = gr.user;
+    }
+    current.update();
+    action.setRedirectURL(current);
+ 
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-26 05:23:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d3018209c3a4e290ac00b13ed40131de</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Assign to me</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Annotify" source="x_1438987_annotify">616d3581c3a4e290ac00b13ed401313d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Annotify">616d3581c3a4e290ac00b13ed401313d</sys_scope>
+        <sys_update_name>sys_ui_action_d3018209c3a4e290ac00b13ed40131de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-26 05:24:40</sys_updated_on>
+        <table>x_1438987_annotify_annotation_case_details</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

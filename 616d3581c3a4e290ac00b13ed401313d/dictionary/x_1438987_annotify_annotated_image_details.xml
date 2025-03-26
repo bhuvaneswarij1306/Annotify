@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="66408e85c3a4e290ac00b13ed4013192" label="Annotated Image Details" max_length="40" name="x_1438987_annotify_annotated_image_details" type="collection">
+        <element label="Image Height" max_length="255" name="image_height" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Annotation Case" max_length="32" name="annotation_case" reference="x_1438987_annotify_annotation_case_details" type="reference"/>
+        <element label="Image Description" max_length="255" name="image_description" type="string"/>
+        <element label="Image Type" max_length="255" name="image_type" type="string"/>
+        <element label="Image Width" max_length="255" name="image_width" type="string"/>
+        <element label="Image Name" max_length="255" name="image_name" type="string"/>
+        <element label="Image Size" max_length="255" name="image_size" type="string"/>
+        <index name="index">
+            <element name="annotation_case"/>
+        </index>
+    </element>
+</database>
