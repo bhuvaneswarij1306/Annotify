@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Submit New Annotation Case">db590209c3e4e290ac00b13ed4013116</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-26 06:02:10</sys_created_on>
+        <sys_id>a5ea8a8dc3e4e290ac00b13ed40131eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Submit New Annotation Case</sys_name>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Annotify">616d3581c3a4e290ac00b13ed401313d</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_a5ea8a8dc3e4e290ac00b13ed40131eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-26 06:02:10</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>
